@@ -1,28 +1,35 @@
-# RabitMQ-With-Springboot
+# 🐇 RabbitMQ With Spring Boot 🧰
 
-This project demonstrates how to integrate RabbitMQ with a Spring Boot application. It showcases basic message publishing and consuming functionalities using RabbitMQ.
+This project demonstrates how to integrate **RabbitMQ** with a **Spring Boot** application. It showcases basic message 📩 publishing and consuming functionalities using RabbitMQ.
 
-## Features
+---
 
-- **Message Producer**: Sends messages to a RabbitMQ queue.
-- **Message Consumer**: Listens to messages from the queue.
-- **Spring Boot Integration**: Simplifies configuration and setup.
+## ✨ Features
 
-## Prerequisites
+- 📨 **Message Producer** – Sends messages to a RabbitMQ queue  
+- 📬 **Message Consumer** – Listens to messages from the queue  
+- ⚙️ **Spring Boot Integration** – Simplified setup with Spring Boot
 
-- Java 11 or higher
-- RabbitMQ (local or cloud-based)
-- Maven (for dependency management)
+---
 
-## Configure RabbitMQ
+## 🛠️ Prerequisites
 
-1. **Install RabbitMQ**: Follow the official RabbitMQ documentation to set up a local RabbitMQ instance.
-2. **Start RabbitMQ Server**: Run the RabbitMQ server using the appropriate command for your operating system.
+- ☕ Java 11 or higher  
+- 🐰 RabbitMQ (local or cloud)  
+- 📦 Maven (for dependency management)
 
-## Add Dependencies
+---
 
-In your `pom.xml`, include the following dependencies:
+## ⚙️ Configure RabbitMQ
 
+1. 🧪 **Install RabbitMQ** – Follow the [official docs](https://www.rabbitmq.com/download.html)  
+2. ▶️ **Start RabbitMQ Server** – Run it using the appropriate command for your OS
+
+---
+
+## 📦 Add Dependencies
+
+In your `pom.xml`, include the following:
 
 ```xml
 <dependency>
@@ -30,28 +37,28 @@ In your `pom.xml`, include the following dependencies:
     <artifactId>spring-boot-starter-amqp</artifactId>
 </dependency>
 ```
-
 
-## Running the Application
+---
 
-1. **Build the Project**: Use Maven to build the project.
+## 🚀 Running the Application
 
-   ```bash
-   mvn clean install
-   ```
-
+1. 🧹 **Build the Project**
 
-2. **Run the Application**: Execute the application using the Spring Boot plugin.
+```bash
+mvn clean install
+```
 
-   ```bash
-   mvn spring-boot:run
-   ```
-
+2. ▶️ **Run the Application**
 
-## Sending Messages
+```bash
+mvn spring-boot:run
+```
 
-To send a message to the queue, you can use a REST client like Postman or curl:
+---
 
+## 📤 Sending Messages
+
+Use Postman or curl to send messages:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -59,10 +66,16 @@ curl --header "Content-Type: application/json" \
   --data '{"message":"Hello, RabbitMQ!"}' \
   http://localhost:8080/send
 ```
-
 
-## License
+---
 
-This project is licensed under the MIT License.
+## 📄 License
+
+Licensed under the [MIT License](https://opensource.org/licenses/MIT) 📘
+
+---
+
+Happy coding! 💻✨  
+🔗 [Visit the repo](https://github.com/rashsvr/RabitMQ-With-Springboot)
 
 ---
